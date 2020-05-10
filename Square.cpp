@@ -27,10 +27,10 @@ Color Square::getColor()
 	return color;
 }
 
-void Square::setPieceAndColor(Piece p, Color c)
+void Square::setPieceAndColor(Piece piece, Color color)
 {
-	piece = p;
-	color = c;
+	this->piece = piece;
+	this->color = color;
 
 }
 

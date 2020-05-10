@@ -1,7 +1,18 @@
 #include "Board.h"
 using namespace std;
 
-void Board::printBoard() {
+void Board::setSquare(Square * s, int x, int y)
+{
+    square[x][y]=*s;
+}
+
+Square* Board::getSquare(int x, int y)
+{
+    return &square[x][y];
+}
+
+void Board::printBoard() 
+{
 	using namespace std;
 	cout << "   y: 0  1  2  3  4  5  6  7 " << endl << "x:" << endl;
 	for (int i = 0; i < 8; i++)
