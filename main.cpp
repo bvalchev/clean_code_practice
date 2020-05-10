@@ -1,12 +1,11 @@
+#pragma once
+
 #include <iostream>
+#include <cmath>
 #include <string>
-#include "chess.h"
+#include "Board.h"
 
 using namespace std;
-
-
-
-
 
 int main()
 {

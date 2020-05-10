@@ -1,31 +1,4 @@
-#pragma once
-
-#include <iostream>
-#include <cmath>
-#include <string>
-
-enum Piece { KING, QUEEN, BISHOP, KNIGHT, ROOK, PAWN, EMPTY };
-enum Color { WHITE, BLACK, NONE };
-
-class Square
-{
-	
-	Piece piece;
-	Color color;
-	int x, y;
-public:
-	void setSpace(Square*);
-	void setEmpty();
-	void setPieceAndColor(Piece, Color);
-	Piece getPiece();
-	Color getColor();
-	void setX(int ex) { x = ex; }
-	void setY(int why) { y = why; }
-	int getX() { return x; }
-	int getY() { return y; }
-	Square();
-};
-
+#include "Square.h"
 class Board
 {
 	Square square[8][8];
@@ -50,4 +23,3 @@ public:
 	void setBoard();
 	bool playGame();
 };
-
